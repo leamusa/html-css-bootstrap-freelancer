@@ -112,3 +112,9 @@ header {
   margin: 20px auto;
   padding: 10px;
 }
+/* Nuove classi per la microstruttura nei footer */
+.microblocco-footer-content {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
+}
