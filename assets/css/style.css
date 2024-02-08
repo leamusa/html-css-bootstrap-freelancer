@@ -5,61 +5,110 @@ body {
   border: 2px dashed;
 }
 
-header,
-.jumbotron,
-.immagini,
-.about,
-.contact,
-.footer-up,
-.footer-down,
-.microblocco {
-  text-align: center;
-  padding: 20px 0;
-  box-sizing: border-box;
-  border: 2px dashed;
-}
-
 header {
   background-color: #3498db;
   color: #fff;
+  text-align: center;
+  padding: 20px;
+  border: 2px dashed;
 }
 
 .jumbotron {
   background-color: #2ecc71;
   color: #fff;
+  text-align: center;
   padding: 60px 0;
+  border: 2px dashed;
+}
+
+.jumbotron .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .immagini {
   background-color: #e74c3c;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.immagini .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .about {
   background-color: #f39c12;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.about .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .contact {
   background-color: #9b59b6;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.contact .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .footer-up {
   background-color: #34495e;
   color: #fff;
+  text-align: center;
   padding: 20px 0;
+  border: 2px dashed;
+}
+
+.footer-up .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .footer-down {
   background-color: #e7753c;
   color: aliceblue;
+  text-align: center;
   padding: 20px 0;
+  border: 2px dashed;
+}
+
+.footer-down .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .ms_text_white {
   color: #fff;
+}
+
+/* Aggiunte classi microblocco per stili specifici */
+.microblocco-jumbotron,
+.microblocco-immagini,
+.microblocco-about,
+.microblocco-contact,
+.microblocco-footer-up,
+.microblocco-footer-down {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
