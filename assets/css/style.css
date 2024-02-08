@@ -13,52 +13,88 @@ header {
   border: 2px dashed;
 }
 
-.jumbotron,
-.immagini,
-.about,
-.contact,
-.footer-up,
-.footer-down {
+.jumbotron {
+  background-color: #2ecc71;
+  color: #fff;
   text-align: center;
+  padding: 60px 0;
+  border: 2px dashed;
+}
+
+.jumbotron .container {
   border: 2px dashed;
   margin: 20px auto;
   padding: 10px;
 }
 
-.jumbotron {
-  background-color: #2ecc71;
-  color: #fff;
-  padding: 60px 0;
-}
-
 .immagini {
   background-color: #e74c3c;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.immagini .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .about {
   background-color: #f39c12;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.about .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .contact {
   background-color: #9b59b6;
   color: #fff;
+  text-align: center;
   padding: 40px 0;
+  border: 2px dashed;
+}
+
+.contact .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .footer-up {
   background-color: #34495e;
   color: #fff;
+  text-align: center;
   padding: 20px 0;
+  border: 2px dashed;
+}
+
+.footer-up .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .footer-down {
   background-color: #e7753c;
   color: aliceblue;
+  text-align: center;
   padding: 20px 0;
+  border: 2px dashed;
+}
+
+.footer-down .container {
+  border: 2px dashed;
+  margin: 20px auto;
+  padding: 10px;
 }
 
 .ms_text_white {
@@ -71,73 +107,62 @@ header {
 .microblocco-about,
 .microblocco-contact,
 .microblocco-footer-up,
-.microblocco-footer-down,
-.microblocco-footer-content {
+.microblocco-footer-down {
   border: 2px dashed;
   margin: 20px auto;
   padding: 10px;
 }
-
 /* Nuove classi per la microstruttura nei footer */
 .microblocco-footer-content {
   border: 2px dashed;
   margin: 20px auto;
   padding: 10px;
 }
+/* Media Query Bootstrap */
 
-/* Responsive per le colonne */
-@media (max-width: 767px) {
-  .jumbotron,
-  .immagini,
-  .about,
-  .contact,
-  .footer-up,
-  .footer-down {
-    padding: 20px 0;
+/* Extra small devices (phones) */
+@media only screen and (max-width: 576px) {
+  [class*="col-"] {
+    width: 100%;
   }
 }
 
-@media (min-width: 768px) and (max-width: 991px) {
-  .jumbotron,
-  .immagini,
-  .about,
-  .contact,
-  .footer-up,
-  .footer-down {
-    padding: 40px 0;
+/* Small devices (tablets) */
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+  [class*="col-"] {
+    width: 50%;
   }
 }
 
-@media (min-width: 992px) and (max-width: 1199px) {
-  .jumbotron,
-  .immagini,
-  .about,
-  .contact,
-  .footer-up,
-  .footer-down {
-    padding: 50px 0;
+/* Medium devices (desktops) */
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  [class*="col-"] {
+    width: 33.33%;
   }
 }
 
-/* Aggiusta il layout delle colonne nei footer per dimensioni medie e grandi */
-@media (min-width: 768px) {
-  .microblocco-footer-up,
-  .microblocco-footer-down {
-    display: flex;
-    flex-direction: column;
+/* Large devices (large desktops) */
+@media only screen and (min-width: 993px) and (max-width: 1200px) {
+  [class*="col-"] {
+    width: 25%;
   }
 }
 
-@media (min-width: 992px) {
-  .microblocco-footer-up,
-  .microblocco-footer-down {
-    flex-direction: row;
+/* Extra large devices (extra large desktops) */
+@media only screen and (min-width: 1201px) {
+  [class*="col-"] {
+    width: 20%;
   }
 }
 
-/* Aggiusta il layout della microarea nel footer per dimensioni medie e grandi */
-@media (min-width: 768px) {
-  .microblocco-footer-content {
-    margin-top: 10px;
-  }
+/* Stili specifici per le sezioni */
+.jumbotron .container,
+.immagini .container,
+.about .container,
+.contact .container,
+.footer-up .container,
+.footer-down .container {
+  width: 100%;
 }
+
+/* Altri stili specifici per le sezioni se necessario */
