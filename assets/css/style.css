@@ -118,3 +118,54 @@ header {
   margin: 20px auto;
   padding: 10px;
 }
+/* Media Query */
+/* Breakpoint per schermi di dimensioni medio-piccole (tablet) */
+@media (max-width: 768px) {
+  .jumbotron {
+    padding: 30px 0;
+  }
+
+  .jumbotron .container,
+  .immagini .container,
+  .about .container,
+  .contact .container,
+  .footer-up .container,
+  .footer-down .container,
+  .microblocco-jumbotron,
+  .microblocco-immagini,
+  .microblocco-about,
+  .microblocco-contact,
+  .microblocco-footer-up,
+  .microblocco-footer-down,
+  .microblocco-footer-content {
+    margin: 10px auto;
+  }
+}
+
+/* Breakpoint per schermi di dimensioni molto piccole (telefoni) */
+@media (max-width: 576px) {
+  .jumbotron {
+    padding: 20px 0;
+  }
+
+  .jumbotron h1 {
+    font-size: 24px;
+  }
+
+  .jumbotron .container,
+  .immagini .container,
+  .about .container,
+  .contact .container,
+  .footer-up .container,
+  .footer-down .container,
+  .microblocco-jumbotron,
+  .microblocco-immagini,
+  .microblocco-about,
+  .microblocco-contact,
+  .microblocco-footer-up,
+  .microblocco-footer-down,
+  .microblocco-footer-content {
+    padding: 5px;
+    margin: 5px auto;
+  }
+}
