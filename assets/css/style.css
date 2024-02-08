@@ -5,66 +5,61 @@ body {
   border: 2px dashed;
 }
 
+header,
+.jumbotron,
+.immagini,
+.about,
+.contact,
+.footer-up,
+.footer-down,
+.microblocco {
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  border: 2px dashed;
+}
+
 header {
   background-color: #3498db;
   color: #fff;
-  text-align: center;
-  padding: 20px;
-  border: 2px dashed;
 }
 
 .jumbotron {
   background-color: #2ecc71;
   color: #fff;
-  text-align: center;
   padding: 60px 0;
-  border: 2px dashed;
 }
 
 .immagini {
   background-color: #e74c3c;
   color: #fff;
-  text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .about {
   background-color: #f39c12;
   color: #fff;
-  text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .contact {
   background-color: #9b59b6;
   color: #fff;
-  text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .footer-up {
   background-color: #34495e;
   color: #fff;
-  text-align: center;
   padding: 20px 0;
-  border: 2px dashed;
 }
 
 .footer-down {
   background-color: #e7753c;
   color: aliceblue;
-  text-align: center;
   padding: 20px 0;
-  border: 2px dashed;
 }
 
 .ms_text_white {
   color: #fff;
-}
-
-.ms_text_green {
-  color: #2ecc71;
 }
