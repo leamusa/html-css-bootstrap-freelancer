@@ -128,8 +128,8 @@ header {
 
 /* Contact section styles */
 #contact_me {
-  background-color: #9b59b6;
-  color: #fff;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 40px 0;
   border: 2px dashed;
