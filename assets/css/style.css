@@ -7,7 +7,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #3498db;
+  background-color: #2d3f51;
   color: #fff;
   text-align: center;
   padding: 20px;
@@ -37,27 +37,45 @@ header {
 #hero {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  background-color: #3498db;
+  background-color: #1abd9b;
   color: #fff;
   text-align: center;
   padding: 20px;
   border: 2px dashed;
 }
+#portfolio {
+  background-color: white;
+  color: #fff;
+  text-align: center;
+  padding: 40px 0;
+  border: 2px dashed;
+}
 
-.hero-row {
+.text_portfolio {
+  font-size: 36px;
+}
+
+.card_image {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-bottom: 15px;
+}
+
+.portfolio-row {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.hero-column {
+.portfolio-column {
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px;
 }
 
-.hero-image {
+.portfolio-image {
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
@@ -90,28 +108,10 @@ header {
 }
 
 /* Portfolio section styles */
-#portfolio {
-  background-color: #34495e;
-  color: #fff;
-  text-align: center;
-  padding: 40px 0;
-  border: 2px dashed;
-}
-
-.text_portfolio {
-  font-size: 36px;
-}
-
-.card_image {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-bottom: 15px;
-}
 
 /* About section styles */
 #about {
-  background-color: #f39c12;
+  background-color: #1abd9b;
   color: #fff;
   text-align: center;
   padding: 40px 0;
@@ -128,8 +128,8 @@ header {
 
 /* Contact section styles */
 #contact_me {
-  background-color: #9b59b6;
-  color: #fff;
+  background-color: white;
+  color: black;
   text-align: center;
   padding: 40px 0;
   border: 2px dashed;
@@ -180,7 +180,7 @@ footer {
 
 /* Copyright section styles */
 #copyright {
-  background-color: #2ecc71;
+  background-color: #2d3f51;
   color: #fff;
   text-align: center;
   padding: 20px 0;
