@@ -6,22 +6,28 @@ body {
 }
 
 /* Header styles */
-header {
-  background-color: #34495e;
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  border: 2px dashed;
-}
-
+/* Header styles */
 #header_item {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
 }
 
+header {
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  background-color: #34495e;
+  color: #fff;
+  text-align: center;
+  width: 100%;
+  height: 80px;
+}
+
 .nav_items_text_title {
-  flex: 1;
+  display: flex;
+  justify-content: start;
 }
 
 .nav_items_icon {
@@ -43,24 +49,26 @@ header {
   color: #fff;
   text-align: center;
   padding: 20px;
-  border: 2px dashed;
 }
 
 .hero-row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-}
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+}Y
 
 .hero-column {
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px;
+  display: flex;
 }
 
 .hero-image {
   max-width: 100%;
-  height: auto;
-  margin-bottom: 15px;
+  height: 346px;
+  margin-bottom: 100px;
 }
 
 .text_hero_title {
@@ -92,10 +100,8 @@ header {
 /* Portfolio section styles */
 #portfolio {
   background-color: white;
-  color: bla;
   text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .text_portfolio {
@@ -115,7 +121,6 @@ header {
   color: #fff;
   text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .text_about {
@@ -132,7 +137,6 @@ header {
   color: black;
   text-align: center;
   padding: 40px 0;
-  border: 2px dashed;
 }
 
 .contact_text {
@@ -155,7 +159,6 @@ footer {
   color: #fff;
   text-align: center;
   padding: 20px 0;
-  border: 2px dashed;
 }
 
 .text_info h3 {
@@ -190,70 +193,89 @@ footer {
   font-size: 14px;
 }
 
-/* Media Query for Hero Section */
-/* Media Query for Hero Section */
+//* Media Query for Hero Section */
+/* Media Query per dispositivi con larghezza massima di 1400px */
+@media only screen and (max-width: 1400px) {
+  header {
+    display: none;
+  }
 
-/* Nuova media query per evitare sovrapposizioni di immagini */
-@media only screen and (min-width: 769px) and (max-width: 1200px) {
-  .hero-column {
-    flex: 0 0 calc(50% - 20px);
-    margin: 10px;
+  .nav_items_text_title {
+    display: flex;
+    justify-content: start;
+  }
+
+  .nav_items_icon {
+    display: flex;
+    justify-content: end;
   }
 }
 
-/* Nuova media query per impostare 3 colonne da 2 righe nella versione desktop */
-@media only screen and (min-width: 1201px) {
-  .hero-column {
-    flex: 0 0 calc(33.33% - 20px);
-    margin: 10px;
+/* Media Query per Tablet e Desktop */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+
+  .nav_items_icon {
+    display: none;
+  }
+
+  header {
+    height: auto; /* Imposta l'altezza automaticamente */
+    padding: 20px; /* Aggiorna il padding per adattarsi ai contenuti */
+  }
+  
+  .nav_items_text_title {
+    justify-content: center; /* Allinea il testo al centro */
   }
 }
 
-/* Clearfix for containers */
-.container::after {
-  content: "";
-  clear: both;
-  display: table;
+/* Media Query per dispositivi con larghezza minima di 992px (Desktop) */
+@media (min-width: 992px) {
+  header {
+    height: 80px; /* Ripristina l'altezza dell'header */
+    text-align: right; /* Allinea il testo a destra */
+  }
 }
 
-.container-sm,
-.container-md,
-.container-lg,
-.container-xl {
-  max-width: 100%;
+
+  /* Ensure the hero section is visible on small screens */
+  #hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    margin-bottom: 40px; /* Adjust the margin for smaller screens */
+  }
 }
 
-/* Responsive images (ensure images don't scale beyond their parents) */
-img {
-  max-width: 100%;
-  height: auto;
+/* Media Query for Tablet and Desktop */
+@media only screen and (min-width: 577px) and (max-width: 991px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
+  }
+  .nav_items_icon {
+    display: none;
+  }
+}
+@media (min-width: 768px) {
+  .col-md-7 {
+ 
+    flex: 6px;
+    width: 1440px;
 }
 
-/* Responsive embeds (ensure videos and other embedded content scales properly) */
-.embed-responsive {
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0;
-  overflow: hidden;
+@media only screen and (max-width: 577px) and (min-width: 991px) .desktop-nav {
+  .col-md-7 { display: none;
 }
-
-.embed-responsive::before {
-  display: block;
-  content: "";
-}
-
-.embed-responsive .embed-responsive-item,
-.embed-responsive iframe,
-.embed-responsive embed,
-.embed-responsive object,
-.embed-responsive video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
 }
