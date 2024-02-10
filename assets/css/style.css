@@ -212,36 +212,47 @@ footer {
 }
 
 /* Media Query per Tablet e Desktop */
-@media only screen and (min-width: 577px) and (max-width: 991px) {
-  .desktop-nav {
-    display: none;
+/* Media Query per dispositivi con larghezza massima di 393px */
+@media only screen and (max-width: 393px) {
+  header {
+    height: auto;
+    padding: 10px; /* Aggiorna il padding per adattarsi ai contenuti */
   }
 
-  .navbar-toggler {
-    display: block;
+  .nav_items_text_title {
+    justify-content: center;
   }
 
   .nav_items_icon {
-    display: none;
-  }
-
-  header {
-    height: auto; /* Imposta l'altezza automaticamente */
-    padding: 20px; /* Aggiorna il padding per adattarsi ai contenuti */
-  }
-  
-  .nav_items_text_title {
-    justify-content: center; /* Allinea il testo al centro */
+    display: flex;
+    justify-content: end;
   }
 }
 
-/* Media Query per dispositivi con larghezza minima di 992px (Desktop) */
-@media (min-width: 992px) {
+/* Media Query per dispositivi con larghezza compresa tra 394px e 788px */
+@media only screen and (min-width: 394px) and (max-width: 788px) {
   header {
-    height: 80px; /* Ripristina l'altezza dell'header */
-    text-align: right; /* Allinea il testo a destra */
+    height: 80px;
+    padding: 15px;
   }
 }
+
+/* Media Query per dispositivi con larghezza compresa tra 789px e 1240px */
+@media only screen and (min-width: 789px) and (max-width: 1240px) {
+  header {
+    height: 80px;
+    padding: 20px;
+  }
+}
+
+/* Media Query per dispositivi con larghezza maggiore di 1240px (Desktop) */
+@media (min-width: 1241px) {
+  header {
+    height: 80px;
+    padding: 30px;
+  }
+}
+
 
 
   /* Ensure the hero section is visible on small screens */
