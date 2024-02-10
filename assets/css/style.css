@@ -57,9 +57,8 @@ header {
   flex-direction: column;
   align-content: center;
   align-items: center;
-}Y
-
-.hero-column {
+}
+Y .hero-column {
   flex: 0 0 calc(33.33% - 20px);
   margin: 10px;
   display: flex;
@@ -194,7 +193,7 @@ footer {
 }
 
 //* Media Query for Hero Section */
-/* Media Query per dispositivi con larghezza massima di 1400px */
+
 @media only screen and (max-width: 1400px) {
   header {
     display: none;
@@ -212,11 +211,11 @@ footer {
 }
 
 /* Media Query per Tablet e Desktop */
-/* Media Query per dispositivi con larghezza massima di 393px */
-@media only screen and (max-width: 393px) {
+/* Media Query per dispositivi con larghezza massima di 768px */
+@media only screen and (max-width: 768px) {
   header {
     height: auto;
-    padding: 10px; /* Aggiorna il padding per adattarsi ai contenuti */
+    padding: 10px;
   }
 
   .nav_items_text_title {
@@ -227,43 +226,24 @@ footer {
     display: flex;
     justify-content: end;
   }
-}
 
-/* Media Query per dispositivi con larghezza compresa tra 394px e 788px */
-@media only screen and (min-width: 394px) and (max-width: 788px) {
-  header {
-    height: 80px;
-    padding: 15px;
+  .desktop-nav {
+    display: none;
+  }
+
+  .navbar-toggler {
+    display: block;
   }
 }
 
-/* Media Query per dispositivi con larghezza compresa tra 789px e 1240px */
-@media only screen and (min-width: 789px) and (max-width: 1240px) {
-  header {
-    height: 80px;
-    padding: 20px;
-  }
+/* Ensure the hero section is visible on small screens */
+#hero {
+  height: auto;
+  padding: 40px 20px;
 }
 
-/* Media Query per dispositivi con larghezza maggiore di 1240px (Desktop) */
-@media (min-width: 1241px) {
-  header {
-    height: 80px;
-    padding: 30px;
-  }
-}
-
-
-
-  /* Ensure the hero section is visible on small screens */
-  #hero {
-    height: auto;
-    padding: 40px 20px;
-  }
-
-  .hero-image {
-    margin-bottom: 40px; /* Adjust the margin for smaller screens */
-  }
+.hero-image {
+  margin-bottom: 40px; /* Adjust the margin for smaller screens */
 }
 
 /* Media Query for Tablet and Desktop */
@@ -281,12 +261,7 @@ footer {
 }
 @media (min-width: 768px) {
   .col-md-7 {
- 
     flex: 6px;
     width: 1440px;
-}
-
-@media only screen and (max-width: 577px) and (min-width: 991px) .desktop-nav {
-  .col-md-7 { display: none;
-}
+  }
 }
