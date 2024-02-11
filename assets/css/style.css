@@ -227,7 +227,7 @@ footer {
 }
 
 /* Media query (Desktop) */
-@media only screen and (min-width: 766px) and (max-width: 1220px) {
+@media only screen and (min-width: 766px) and (max-width: 1200px) {
   .nav_items_text_title {
     justify-content: flex-start;
   }
@@ -238,14 +238,11 @@ footer {
     justify-content: flex-end;
     align-items: flex-end;
   }
-  .col-md-7 {
-    flex: 293px;
-    width: 600px;
-  }
 }
-@media (min-width: 768px) {
+
+@media (min-width: 766px) {
   .col-md-7 {
-    flex: 15px;
-    width: 625px;
+    flex: 21px;
+    width: 766px;
   }
 }
