@@ -227,7 +227,7 @@ footer {
 }
 
 /* Media query (Desktop) */
-@media only screen and (min-width: 766px) and (max-width: 100px) {
+@media only screen and (min-width: 766px) and (max-width: 1220px) {
   .nav_items_text_title {
     justify-content: flex-start;
   }
