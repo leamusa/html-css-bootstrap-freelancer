@@ -100,6 +100,7 @@ Y .hero-column {
 
 .text_portfolio {
   font-size: 36px;
+  text-align: center;
 }
 
 .card_image {
@@ -129,12 +130,12 @@ Y .hero-column {
 #contact_me {
   background-color: white;
   color: black;
-  text-align: center;
+  text-align: left;
   padding: 40px 0;
 }
 
-.contact_text {
-  font-size: 36px;
+.mb-3 {
+  text-align: left;
 }
 
 .form_style {
@@ -142,7 +143,7 @@ Y .hero-column {
 }
 
 #button_contact {
-  background-color: #3498db;
+  background-color: #1abd9b;
   color: #fff;
   border: none;
 }
@@ -228,5 +229,15 @@ footer {
   .col-md-7 {
     flex: 90px;
     width: 863px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .hero {
+    height: auto;
+    padding: 40px 20px;
+  }
+
+  .hero-image {
+    margin-bottom: 40px;
   }
 }
