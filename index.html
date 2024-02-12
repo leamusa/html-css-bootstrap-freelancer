@@ -272,6 +272,7 @@
       </section>
 
       <!-- contact me -->
+      <!-- contact me -->
       <section id="contact_me">
         <div class="container text-center">
           <div class="row">
@@ -284,7 +285,7 @@
             <div
               class="d-flex justify-content-center align-items-center line-star"
             >
-              <div class="line"></div>
+              <div class="line contact"></div>
               <div class="star">
                 <i
                   class="fa-sharp fa-solid fa-star"
@@ -296,35 +297,37 @@
           </div>
 
           <div class="row">
-            <!-- faq -->
+            <!-- form -->
             <div class="col">
-              <form class="row g-3">
-                <div class="col-12 form_style">
-                  <label class="form_style" for="inputname" class="form-label"
-                    >Name</label
-                  >
-                  <input type="text" class="form-control" id="inputname" />
+              <form>
+                <div class="mb-3">
+                  <label for="inputName" class="form-label">Name</label>
+                  <input type="text" class="form-control" id="inputName" />
                 </div>
-
-                <div class="col-12 form_style">
-                  <label class="form_style" for="inputemail" class="form-label"
-                    >E-mail Adress</label
+                <div class="mb-3">
+                  <label for="inputEmail" class="form-label"
+                    >Email Address</label
                   >
-                  <input type="email" class="form-control" id="inputemail" />
+                  <input type="email" class="form-control" id="inputEmail" />
                 </div>
-
-                <div class="col-12 form_style">
-                  <label class="form_style" for="inputnumber" class="form-label"
+                <div class="mb-3">
+                  <label for="inputPhoneNumber" class="form-label"
                     >Phone Number</label
                   >
-                  <input type="text" class="form-control" id="inputnumber" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputPhoneNumber"
+                  />
                 </div>
-
-                <div class="form_style col-12 mb-5">
-                  <label for="form_massage" class="form_style">Massage</label>
-                  <input type="text" class="form-control" id="form_massage" />
+                <div class="mb-3">
+                  <label for="inputMessage" class="form-label">Message</label>
+                  <textarea
+                    class="form-control"
+                    id="inputMessage"
+                    rows="4"
+                  ></textarea>
                 </div>
-
                 <div class="col-12 d-flex justify-content-start mb-5">
                   <button
                     id="button_contact"
